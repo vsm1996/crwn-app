@@ -1,3 +1,7 @@
+E-Commmerce App Built Using React/Redux, Firebase, SASS, Context API, and GraphQL + Apollo. Also implementing Stripe API for basic online payments.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
