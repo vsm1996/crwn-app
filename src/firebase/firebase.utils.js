@@ -13,13 +13,19 @@ const config = {
   measurementId: "G-YNTREMW4JE"
 };
 
+// initializing firebase
 firebase.initializeApp(config);
 
+// initializing firebase Authentication
 export const auth = firebase.auth();
+
+//initizializing firebase Database
 export const firestore = firebase.firestore();
 
+//creating google auth provider object from firebase
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: 'select_account'})
+// always trigger the GOOGLE sign-in pop up for the auth provider
 export const signInWithGoogle = () => auth.signInWithPopup(provider)
 
 export default firebase;
