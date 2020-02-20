@@ -29,7 +29,6 @@ app.listen(port, error => {
 });
 
 app.post('/payment', (req, res) => {
-  console.log("INSIDE")
   const body = {
     source: req.body.token.id,
     amount: req.body.amount,
